@@ -19,7 +19,7 @@ msg = '''QRST126XDG MPESA confirmed
 you have received ksh 300000 from kelvin kimuoka .
 Safaricomtransparent for you
 '''
-print(msg)
+print(msg) 
 txt = """Holla! I am James
 I come from somewhere here.
 I like watching movies.

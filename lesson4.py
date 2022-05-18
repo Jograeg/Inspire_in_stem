@@ -6,7 +6,7 @@ y = 300
 sum_of = x + y
 diff = y - x
 prod = x * y 
-quot = y / x
+quot = y / x 
 
 print("the sum of x and y is?" str(sum_of))
 print("the diff of x and y is?" str(diff))
