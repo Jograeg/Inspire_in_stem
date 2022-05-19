@@ -10,7 +10,7 @@ age = 16
 # \n for new line and \t to tab
 # print(f"My name is(name) \n and \t I am (age) years old")
 # print(user_name.strip())
-print(user_name.1strip())
+print(user_name.lstrip())
 
 
 # Multiline string
