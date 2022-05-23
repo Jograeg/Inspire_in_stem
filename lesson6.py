@@ -31,3 +31,5 @@ print("my name is {} and i own a motorcycle {} with plate number {}" . format(mo
 motorcycle.remove('honda')
 print(motorcycle)
 
+print(motorcycle[-1])
+print(motorcycle)
