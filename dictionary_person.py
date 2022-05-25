@@ -17,6 +17,6 @@ for key, value in person.items():
 color=['blue','green','red','yellow','purple']
 i = 0
 while i < len(color):
-    if(color[1]=='green'):
-        print(color[1].upper())  
+    if(color[3]=='yellow'):
+        print(color[3].upper())  
         i+=1  
