@@ -41,6 +41,26 @@ git push main
 + cictionary in dictionary, list in dictionary, dictionary in list
 
 
+     +loops
++ for loops
++ while loops
+
+     +conditions
++ if       if x>6  and x<10 
++ if else => if
+             elif 
+             else
+
+
++ <  less than
++ <= less than or equal to
++ >= greater than or equal to
++ > greater than 
++ == equal 
++ = assigning
++ % modulers
+             
+
 # Week 2 : Electronics for inovators
 
 # Week 3 : Introduction to robotics
