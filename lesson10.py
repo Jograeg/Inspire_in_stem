@@ -19,8 +19,10 @@
         #product = numbers * product
 #print(product)    
 
-#factorial=(number * (number-1))
-
+# factorial 
+factorial=(number * (number-1))
+n! = n * (n-1)*(n-2)*(n-3)
+6! = 6*5*4*3*2*1 
 
 # using while loop
 #num = 0
