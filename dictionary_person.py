@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 person= {'name' : 'James', 'Id' : '589000' ,'location' : 'Nairobi', 'gender' : 'male' }
 print(person['name'] ,person['Id'] , person['location'] ,person['gender'])
 print(person['name'])

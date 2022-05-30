@@ -59,7 +59,10 @@ git push main
 + == equal 
 + = assigning
 + % modulers
-             
+
+
++ dictionary = this is the collection of key value pairs
++ list =             
 
 # Week 2 : Electronics for inovators
 

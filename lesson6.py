@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # learning about listing
 motorcycle_owner = "mojo jojo"
 plate_number = ['H1234','Z1234','S1234']

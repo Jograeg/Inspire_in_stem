@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # a dictionary is a collection of key value pairs  ,key : value
 # syntax: dictionary = {'key' : 'value'}
 #list_names ='john Mary'

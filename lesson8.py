@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # Empty list
 squares = []
 for numbers in range(0,10):

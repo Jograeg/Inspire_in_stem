@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 school= ["Joy","Mercy","Happy","Hope"]
 pupil =["peace","patience","Amani","patricia"]
 print(school[0], pupil[0])

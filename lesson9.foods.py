@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # if statements
 
 age = 43
@@ -14,4 +16,7 @@ food = {
     'mary':['beef','chicken','vegetables'],
     'jane':['rice','ugali','potatoes'],
 }
-print(food)
+#print(food)
+
+for key , value in food.items():
+    print(f"{key}:{value}")

@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # first n terms of AP.
 
 #a => first number

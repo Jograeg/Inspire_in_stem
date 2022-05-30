@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # methods 
 name = "mathenge mwangangi"
 name = "Lovelace"

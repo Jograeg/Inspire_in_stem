@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 rows = int(input("enter number of rows"))
 k=0
 for i in range (1,rows+1):

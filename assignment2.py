@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # write a program to withdraw both 25,000 if account balance is between ksh 100,000 to 200,000
 #30% if acc balance is btwn 500,000 to 1m
 #above 1m deduct 15,000

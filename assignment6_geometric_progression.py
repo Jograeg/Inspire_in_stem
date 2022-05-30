@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # calculating geometric progression
 
 a = int(input("enter starting number"))

@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 print("Hello world")
 # my first program
 # print my name

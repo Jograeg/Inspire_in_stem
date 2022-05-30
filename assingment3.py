@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # write a program that gets user input and adds ksh 10,000 to her account she is btwn 25-30 years
 age = input("what is your age")
 gender=input("what gender are you : male/female")
