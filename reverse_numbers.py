@@ -4,7 +4,7 @@
 #input is 700
 #output is 007
 
-num = 1234
+num = 34567
 reversed_num = 0 
 
 while num != 0:
