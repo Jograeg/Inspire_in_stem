@@ -62,7 +62,13 @@ git push main
 
 
 + dictionary = this is the collection of key value pairs
-+ list =             
+
++++ functions = This are blocks of code which are exercised together.
+  + use Def
+
++ returnimg a list into a function
++ returning parameters
++          
 
 # Week 2 : Electronics for inovators
 

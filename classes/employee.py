@@ -1,9 +1,3 @@
-#!/usr/bin/python
-
-##################################################
-#         Classes
-#         Name : jamo         
-#         date: 2 / 6 / 2022 Thursday
 
 class employee:
     def __init__(self, _name, _id, _salary):
