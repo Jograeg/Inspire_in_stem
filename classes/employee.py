@@ -1,3 +1,11 @@
+#!/usr/bin/python
+
+##################################################
+#         Password generator app
+#         Name : Jamo         
+#         date: 3 / 6 / 2022 Friday
+
+###########
 
 class employee:
     def __init__(self, _name, _id, _salary):

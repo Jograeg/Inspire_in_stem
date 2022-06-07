@@ -1,3 +1,12 @@
+#!/usr/bin/python
+
+##################################################
+#         Password generator app
+#         Name : Jamo         
+#         date: 3 / 6 / 2022 Friday
+
+###########
+
 f = open("lesson.txt")
 f = open("lesson.txt")
 

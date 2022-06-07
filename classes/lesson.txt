@@ -25,5 +25,6 @@ a   opens a file for appendimg at the end of the
 t   opens in a text mode. (default)
 b   opens in a binary mode.
 +   opens a file for updating(reading and writing)
+*   adding everything
 
 NB(TEXT MODS -   )
