@@ -1,3 +1,12 @@
+
+#!/usr/bin/python
+
+##################################################
+#         Weather
+#         Name : Jamo         
+#         date: 9 / 6 / 2022  Friday
+
+###########
 # importing requests and json
 import requests, json
 # base URL
