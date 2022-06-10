@@ -1,212 +1,163 @@
-import turtle
-import time
 
-wn = turtle.Screen()
-wn.bgcolor("black")
-wn.setup(width = 600, height = 600)
-wn.title("simple analog clock")
-wn.tracer(0)
+#import library
+from turtle import Turtle, Screen
+import datetime
 
-pen = turtle.Turtle()
-pen.hideturtle()
+#creating window
+window = Screen()
+#setting window title
+window.title("Jamo:analog Clock")
+#setting background color
+window.bgcolor("black")
+#setting height and width of window
+window.setup(width=500, height=400)
+
+#creating outer circle
+circle = Turtle()
+circle.penup()
+circle.pencolor("#118893")
+circle.speed(0)
+circle.pensize(25)
+circle.hideturtle()
+circle.goto(0, -390)
+circle.pendown()
+circle.fillcolor("#17202A")
+circle.begin_fill()
+circle.circle(400)
+circle.end_fill()
+
+#creating hour hand
+hHand = Turtle()
+hHand.shape("arrow")
+hHand.color("white")
+hHand.speed(10)
+hHand.shapesize(stretch_wid=0.4, stretch_len=18)
+
+#creating minute hand
+mHand = Turtle()
+mHand.shape("arrow")
+mHand.color("white")
+mHand.speed(10)
+mHand.shapesize(stretch_wid=0.4, stretch_len=26)
+
+#creating second hand
+sHand = Turtle()
+sHand.shape("arrow")
+sHand.color("dark red")
+sHand.speed(10)
+sHand.shapesize(stretch_wid=0.4, stretch_len=36)
+
+#creating center circle
+centerCircle = Turtle()
+centerCircle.shape("circle")
+#setting color to white
+centerCircle.color("white")
+centerCircle.shapesize(stretch_wid=1.5, stretch_len=1.5)
+
+# numbers with pen
+pen = Turtle()
 pen.speed(0)
-pen.pensize(3)
+pen.color("white")
 
-def draw_clock(h,m,s,pen):
-    pen.penup()
-    pen.goto(0,210)
-    pen.setheading(180)
-    pen.color("green")
-    pen.pendown()
-    pen.circle(210)
-
-    pen.penup()
-    pen.goto(0,0)
-    pen.setheading(90)
-
-for clock in range(12):
-    pen.fd(190)
-    pen.pendown()
-    pen.fd(20)
-    pen.penup()
-    pen.goto(0,0)
-    pen.rt(6)
-
-    pen.penup()
-    pen.goto(0,0)
-    pen.setheading(90)
-
-for clock in range(60):
-    pen.fd(200)
-    pen.pendown() 
-    pen.fd(10)
-    pen.penup()
-    pen.goto(0,0)
-    pen.rt(6)
-
- #one
+#number 1
 pen.penup()
-pen.goto(0,0)
-pen.setheading(60)
-pen.fd(145)
-pen.setheading(0)
-pen.fd(15)
-pen.write(1,move = False, align = "center", font = ("Arial",25,"normal"))
+pen.hideturtle()
+pen.goto(170, 260)
+pen.write("1", align="center", font=("Algerian", 50, "bold"))
 
-#two   
+#number 2
 pen.penup()
-pen.goto(0,0)
-pen.setheading(30)
-pen.fd(135)
-pen.setheading(0)
-pen.fd(35)
-pen.write(2,move = False, align = "center", font = ("Arial",25,"normal"))
+pen.hideturtle()
+pen.goto(300, 140)
+pen.write("2", align="center", font=("Algerian", 50, "bold"))
 
-#three
+#number 3
 pen.penup()
-pen.goto(0,0)
-pen.setheading(352)
-pen.fd(150)
-pen.setheading(0)
-pen.fd(25)
-pen.write(3,move = False, align = "center", font = ("Arial",25,"normal"))
+pen.hideturtle()
+pen.goto(340, -30)
+pen.write("3", align="center", font=("Algerian", 50, "bold"))
 
-#four
+#number 4
 pen.penup()
-pen.goto(0,0)
-pen.setheading(315)
-pen.fd(150)
-pen.setheading(0)
-pen.fd(45)
-pen.write(4,move = False, align = "center", font = ("Arial",25,"normal"))
+pen.hideturtle()
+pen.goto(300, -200)
+pen.write("4", align="center", font=("Algerian", 50, "bold"))
 
-#five
+#number 5
 pen.penup()
-pen.goto(0,0)
-pen.setheading(290)
-pen.fd(178)
-pen.setheading(0)
-pen.fd(25)
-pen.write(5,move = False, align = "center", font = ("Arial",25,"normal"))
+pen.hideturtle()
+pen.goto(170, -325)
+pen.write("5", align="center", font=("Algerian", 50, "bold"))
 
-#six
+#number 6
 pen.penup()
-pen.goto(0,0)
-pen.setheading(270)
-pen.fd(190)
-pen.setheading(0)
-pen.fd(190)
-pen.write(6,move = False, align = "center", font = ("Arial",25,"normal"))
+pen.hideturtle()
+pen.goto(0, -370)
+pen.write("6", align="center", font=("Algerian", 50, "bold"))
 
-#seven
+#number 7
 pen.penup()
-pen.goto(0,0)
-pen.setheading(258)
-pen.fd(170)
-pen.setheading(180)
-pen.fd(48)
-pen.write(7,move = False, align = "center", font = ("Arial",25,"normal"))
+pen.hideturtle()
+pen.goto(-170, -325)
+pen.write("7", align="center", font=("Algerian", 50, "bold"))
 
-#eight
+#number 8
 pen.penup()
-pen.goto(0,0)
-pen.setheading(228)
-pen.fd(150)
-pen.setheading(180)
-pen.fd(50)
-pen.write(8,move = False, align = "center", font = ("Arial",25,"normal"))
+pen.hideturtle()
+pen.goto(-300, -200)
+pen.write("8", align="center", font=("Algerian", 50, "bold"))
 
-#nine
+#number 9
 pen.penup()
-pen.goto(0,0)
-pen.setheading(188)
-pen.fd(150)
-pen.setheading(180)
-pen.fd(25)
-pen.write(9,move = False, align = "center", font = ("Arial",25,"normal"))
+pen.hideturtle()
+pen.goto(-340, -30)
+pen.write("9", align="center", font=("Algerian", 50, "bold"))
 
-#ten
+#number 10
 pen.penup()
-pen.goto(0,0)
-pen.setheading(150)
-pen.fd(135)
-pen.setheading(180)
-pen.fd(25)
-pen.write(10,move = False, align = "center", font = ("Arial",25,"normal"))
+pen.hideturtle()
+pen.goto(-280, 140)
+pen.write("10", align="center", font=("Algerian", 50, "bold"))
 
-#eleven
+#number 11
 pen.penup()
-pen.goto(0,0)
-pen.setheading(120)
-pen.fd(145)
-pen.setheading(180)
-pen.fd(15)
-pen.write(11,move = False, align = "center", font = ("Arial",25,"normal"))
+pen.hideturtle()
+pen.goto(-160, 260)
+pen.write("11", align="center", font=("Algerian", 50, "bold"))
 
-#twelve
+#number 12
 pen.penup()
-pen.goto(0,0)
-pen.setheading(60)
-pen.fd(150)
-pen.write(12,move = False, align = "center", font = ("Arial",25,"normal"))
+pen.hideturtle()
+pen.goto(0, 300)
+pen.write("12", align="center", font=("Algerian", 50, "bold"))
 
-#hour hand
-pen.up()
-pen.goto(0,0)
-pen.color("red")
-pen.setheading(90)
-angle = (h / 12) * 360
-pen.rt(angle)
-pen.pendown()
-pen.fd(50)
+#Defining function to movie hour hand
+def movehHand():
+   currentHourInternal = datetime.datetime.now().hour
+   degree = (currentHourInternal - 15) * -30
+   currentMinuteInternal = datetime.datetime.now().minute
+   degree = degree + -0.5 * currentMinuteInternal
+   hHand.setheading(degree)
+   window.ontimer(movehHand, 60000)
 
-#minute hand
-pen.up()
-pen.goto(0,0)
-pen.color("Blue")
-pen.setheading(90)
-angle = (m / 60) * 360
-pen.rt(angle)
-pen.pendown()
-pen.fd(100)
 
-#second hand
-pen.up()
-pen.goto(0,0)
-pen.color("orange")
-pen.setheading(90)
-angle = (s / 60) * 360
-pen.rt(angle)
-pen.pendown()
-pen.fd(150)
+#Defining function to minute hand
+def movemHand():
+    currentMinuteInternal = datetime.datetime.now().minute
+    degree = (currentMinuteInternal - 15) * -6
+    currentSecondInternal = datetime.datetime.now().second
+    degree = degree + (-currentSecondInternal * 0.1)
+    mHand.setheading(degree)
+    window.ontimer(movemHand, 1000)
 
-#extra writing its designed by who
-pen.penup()
-pen.goto(0,0)
-pen.pencolor("gold")
-pen.setheading(268)
-pen.fd(125)
-pen.setheading(0)
-pen.fd(5)
-pen.write("Designed by James",move = False, align = "centre", font = ("Arial",12,"normal"))
+#Defining function to second hand
+def movesHand():
+    currentSecondInternal = datetime.datetime.now().second
+    degree = (currentSecondInternal - 15) * -6
+    sHand.setheading(degree)
+    window.ontimer(movesHand, 1000)
 
-# writing name on the clock's face
-pen.penup()
-pen.goto(0,0)
-pen.pencolor("gold")
-pen.setheading(88)
-pen.fd(96)
-pen.write("JAMES",move = False, align = "centre", font = ("Arial",12,"normal"))
-
-#main loop
-while True:
-    h = int(time.strftime("%H"))
-    m = int(time.strftime("%M"))
-    s = int(time.strftime("%S"))
-
-draw_clock(h, m, s, pen)
-wn.update()
-time.sleep(1)
-pen.clear()
-wn.mainloop()
-            
+window.ontimer(movehHand, 1)
+window.ontimer(movemHand, 1)
+window.ontimer(movesHand, 1)
+window.exitonclick()
