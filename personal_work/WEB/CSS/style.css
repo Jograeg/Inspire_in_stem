@@ -1,0 +1,12 @@
+body{
+    margin: 25px;
+    background-color: beige;
+}
+.block{
+    color: aqua;
+}
+.meta data{
+    color: red;
+    font-size: 18;
+    font-weight: 400;
+}
